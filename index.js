@@ -13,4 +13,8 @@ class Driver {
     this.name = name;
     this.startDate = new Date(startDate);
   }
+  yearsExperienceFromBeginningOf(year) {
+    let endDate = newDate(year, 1, 1);
+    let totalYears = (endDate - this.startDate)/(365*24)
+  }
 }
